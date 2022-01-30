@@ -1,0 +1,712 @@
+/* Общение бывают след типов:
+   1) теги р
+   2) класс
+   3) id #
+   4) атрибуты []
+   5) обращение ко всем элементам */
+
+
+
+/* Базовые настройки страницы */
+/*  * - озночает обращение ко всем элементам сайта */
+    
+    * {
+       box-sizing: border-box;
+    }
+
+    body, p {
+        margin: 0;
+    }
+
+    /* Конец базовых настроек страницы */    
+
+    /* Универсальные стили */
+
+/* Это озночает дополнительное к тому или иному элементу.
+   Это перечисление подключений новых Class'ов */
+
+
+    .left, .ul_li > li {
+        float: left;
+    }                    
+        /* > - это стрелочка озночает что обращение будет происходит только для родительских элементов */
+        /* Float - это обтекание. То есть выравнивание.
+      Выравнивание: куда
+      Выравнивание: в левую сторону  = float: Left
+      Выравнивание: в правую сторону = float: rights*/        
+       
+    .right {
+        float: right;
+        /* Float - это обтекание. То есть выравнивание.
+      Выравнивание: куда
+      Выравнивание: в левую сторону  = float: Left
+      Выравнивание: в правую сторону = float: rights*/
+    }
+
+    .ul_li, ul {
+        list-style: none;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .ul_li li {
+        padding: 10px 15px;
+        
+    }
+    .b-r li {
+        border-right: 1px solid #dadada;
+        /* border - границы
+           граница - ширина, тип, цвет */
+    }    
+
+    .b-r li:last-child {
+        border-right: 0;
+    } 
+
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+        /* margin - внешний отступ */
+    }  
+
+    
+/* Стили для страницы  */
+    .verhnee_menu {        
+        display: inline-block;
+        width: 100%;
+    }
+
+    .verhnee_menu .ul_li i {
+        margin-right: 10px;
+    }
+    
+    /* Position */
+
+    .msg {
+        position: absolute;
+        /* position - это позиционирование */
+        top: -7px;
+        right: 8px;
+        background: red;
+        width: 13px;
+        height: 13px;
+        text-align: center;
+        color: white;
+        font-size: 9px;
+        line-height: 1.5;
+        border-radius: 13px;
+    }
+
+    .icon_msg {
+        position: relative;
+    }
+    
+    .center_menu ul {
+        display: flex;
+        /* display - это блок отображения. Возможные вариации отображения.
+           
+
+        */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .seryi_krug {
+        background: #ececec;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+        line-height: 2.5;
+        border-radius: 20px;
+        color: #4c4b6c;
+    }
+    
+    .center_menu .right > p:first-child {
+        font-weight: bold;
+        color: #4c4b6c;
+    }
+
+    .center_menu .right > p {
+        color: #ababab;
+    }
+
+    /* Нижнее меню */
+
+    .nijnee_meny {
+        display: inline-block;
+        width: 100%;
+        background: #f7f7f7;
+        position: relative;
+        height: 50px;
+        
+    }
+
+    /* BANNER 4 FOTO */
+
+    .kids-winter {
+        margin-bottom: 50px;
+    }
+
+    .kids-st .owl-next:hover {
+        background: #7cd0f5 !important;
+        color: #fff !important;
+        transition: all .3s; 
+    }
+    .kids-st {
+        position: relative;
+    }
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 100%;
+    }
+    img {
+        vertical-align: middle;
+    }
+    img {
+        border: 0;
+    }
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+    .owl-carousel.owl-drag .owl-item {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .owl-carousel, .owl-carousel .owl-item {
+        -webkit-tap-highlight-color: transparent;
+        position: relative;
+    }
+    body {
+        font-family: "Eina", sans-serif;
+        font-size: 14px;
+        line-height: 1.428571429;
+        color: #222222;
+        background-color: #fff;
+    }
+    html {
+        font-size: 10px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    html {
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+    }
+    *:before, *:after {        
+        
+        box-sizing: border-box;
+    }
+    *:before, *:after {
+        /* -webkit-box-sizing: border-box; */
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }   
+    
+   
+/* BANER 4 FOTO KONETS */
+
+    .m-l-10 {
+        margin-left: 10px;
+    }
+
+    .red {color: red;}
+    .yellow {color: orange;}
+    .blue {color: rgb(71, 164, 251);}
+    a {
+        color: #4c4b6c;
+        text-decoration: underline;
+    } 
+
+    .dropdown_menu {
+        display: none;
+        position: absolute;
+        background: white;        
+        border: 1px solid black;
+        width: 100%;
+        top: 50px;
+        left: 0;
+        z-index: 2;        
+    } 
+    
+
+    .hover_menu li:hover .dropdown_menu {
+        display: block;        
+    }
+
+    /* 17-urok */
+
+    .block_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: #e8e8e8;
+        padding-right: 140px;
+    }
+
+    #product {
+        
+        text-align: left;
+        margin-right: auto;
+        color: #4c4b6c;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-family: poppins;
+    }
+    
+    .body_block {
+        margin-top: 20px;
+        display: inline-block;        
+    }
+
+    .verhnee_menu {        
+        display: inline-block;
+        width: 100%;
+    }
+
+    .verhnee_menu .ul_li i {
+        margin-right: 10px;
+    }
+
+    .list_product > .product {
+        float: left;
+    }
+    .block_stars {
+        display: inline-block;
+    }
+
+    .block_stars > div {        
+        float: left;
+    }
+
+    .product {
+        display: inline-block;
+        min-height: 300px;
+    }
+
+    .product img {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        object-fit: contain;
+    }
+    .body_product {
+        margin-top: 10px;
+    }
+    .stars > i {
+        color: #ffcc33;
+        font-size: 10px;
+        margin-left: -4px;
+    }
+
+    .stars {
+        margin-right: 5px;
+    }
+
+    .stars > i:first-child {
+        margin-left: 0;
+    }
+    .reviews {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+    .price {
+        display: inline-block;
+        width: 100%;
+        margin-top: -5px;
+    }   
+    
+
+    
+    div {
+        display: block;
+    }
+    .owl-theme .owl-dots, .owl-theme .owl-nav {
+        text-align: center;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .owl-carousel, .owl-carousel .owl-item {
+        -webkit-tap-highlight-color: transparent;
+        position: relative;
+    }
+    body {
+        padding: 0px;
+        font-weight: 400;
+        margin: 0px;
+    }
+    body {
+        font-family: "Eina", sans-serif;
+        font-size: 14px;
+        line-height: 1.428571429;
+        color: #222222;
+        background-color: #fff;
+    }
+    html {
+        font-size: 10px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    html {
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+    }
+    *:before, *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    *:before, *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    /* СТРЕЛКА */
+    /* .owl-nav {
+        margin-left: -480px;
+        float: right;
+    }
+    .owl-prev {
+        background: #ececec;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+        line-height: 2.5;
+        border-radius: 20px;
+        color: #4c4b6c;        
+    }
+    .owl-next {
+        background: #ececec;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+        line-height: 2.5;
+        border-radius: 20px;
+        color: #4c4b6c;        
+    } */
+    
+    .price span {
+        font-size: 20px;
+        font-weight: bold;
+        color: #4c4b6c;
+    }
+    .price del {
+        font-size: 15px;
+        margin-left: 20px;
+        color: #9e9e9e;
+        line-height: 2;
+    }
+
+    .btns li {
+        padding: 0;
+    }
+
+    .btns .ul_li {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .btns .seryi_krug {
+        transition: .5s;
+    }
+    .btns li:hover .seryi_krug {
+        background: #7cd0f5;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .dnone {
+        display: none;
+    }
+
+    .bg_orange {
+        background: orange;
+    }
+    .bg_green {
+        background: green;
+    }
+    .bg_blue {
+        background: rgb(68, 173, 243);        
+    }
+    .bg_red {
+        background: red;
+    }
+
+
+    .product:hover .dnone {
+        display: block;
+    }
+
+    .product:hover .block_stars {
+        display: none;
+    }
+    .img {
+        position: relative;
+    }
+
+    .desc_img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #ffffffb5;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #dcdcdcd5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: .5s;               
+    }
+    .desc {
+        width: 80%;
+        text-align: center;
+    }
+    .ttl {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .product:hover .dnone {
+        display: block;
+    }
+
+    .product:hover .block_stars {
+        display: none;
+    }
+
+    .product:hover .desc_img {
+        opacity: 1;
+    }
+    .list_product {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tooltip {
+        position: absolute;
+        right: -7px;
+        top: 7px;
+        
+        color: white;
+        padding: 3px 6px;
+        font-size: 13px;
+        border-radius: 4px;
+        z-index: 1;
+    }  
+
+    #banner img {
+        width: 100%;
+    }
+    
+    .btn_call {
+        text-align: center;
+        margin-top: 20px;
+    }    
+
+    .btn_call a {
+        background: #7cd0f5;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    
+    .btn_call a:hover {
+        background: #2f96c2;
+    }
+    .f_li_hover li {
+        padding: 5px 0;
+        transition: .5s;
+    }
+
+    .f_li_hover li:hover {
+        margin-left: 15px;
+        font-weight: bold;
+    }
+    .f_ttl::before {
+        content: "";
+        width: 50px;
+        height: 3px;
+        background: #d2d2d2;
+        position: absolute;
+        bottom: -7px;        
+    }
+    .f_ttl {
+        position: relative;
+        margin-bottom: 50px;
+    }
+    footer .ul_li li {
+        padding: 2px;
+    }
+    
+    .nijnee_meny .container > div {
+        width: 45%;
+    }
+
+    .right img {
+        width: 85%;
+        text-align: right;
+    }
+
+/* Конец стилей для страницы */
+
+/* Мобильная адаптация 
+19-урок*/
+
+        /* Есть 2 вида адаптации
+            1) Резиновый шаблон - это когда весь сайт задан в процентом соотношении. То есть когда мы будем уменшать размер браузера все данные будут растягиваться либо сжаматься.
+            2) Фикцированный - это когда мы адаптируем под стандарты того или иного устройство.
+            */
+            /* Пример размера Iphone 6/7/8 Plus */
+            @media (max-width:414px) {
+
+                /*@media - этот параметр нужен для того чтобы обратится к размеру устройства пользователя
+                max-wid - этот параметр нужен для того чтобы указать минимальную ширину блока и указать для него и для экранов ниже размером стили */
+
+            }
+
+            /* Данная запись говорит о том чтобы я мог получить размер экрана 414px и использовал стили которые в нем будет заключены. */
+
+            /* Правила адаптации*/
+            /* 1) Адаптация начинается с большого размера к меньшему  */
+
+        /* Старт адаптации */
+
+        @media (max-width:1024px) {
+            /* max-width:1024px - адаптация от этого размера и ниже */
+            /* Еще есть min-width: 1024px - от этого размера и выше */
+            .container {                
+                width: auto;
+            }
+            .list_product {                
+                flex-wrap: wrap;
+                justify-content: left;
+            }
+
+            .product {
+                margin-right: 34px;
+            }
+            .list_product > .product:nth-child(4n) {
+                margin-right: 0;
+            }
+            .verhnee_menu, .center_menu p{
+                font-size: 12px;
+            }
+            .f_ttl {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 812px) {        
+            .verhnee_menu .left,
+            .center_menu .left {
+                display: none;
+            }
+            .m-l-10 {
+                margin-left: 0;                
+            }
+            .product {
+                margin-right: 30px;
+            }
+            .list_product > .product:nth-child(3n) {
+                margin-right: 0;
+            }
+            .list_product > .product:nth-child(4n) {
+                margin-right: 30px;
+            }            
+        }
+
+        @media (max-width:736px) {
+            .center_menu .ul_li > li:nth-child(3),
+            .center_menu .ul_li > li:nth-child(4),
+            .nijnee_meny .left {
+                display: none;
+            }
+
+            .nijnee_meny .container > div,
+            .right img,
+            .product .img {
+                width: 90%;
+            }
+            
+        }       
+
+        /* @media (max-width:768px) {
+            .verhnee_menu .left,
+            .center_menu .left {
+                display: none;
+            }
+            
+            .m-l-10 {
+                margin-left: 0;
+            }
+            .product {
+                margin-right: 30px;
+            }
+            .list_product > .product:nth-child(3n) {
+                margin-right: 0;
+            }
+            .list_product > .product:nth-child(4n) {
+                margin-right: 30px;
+            }    
+        } */
+
+        @media (max-width:480px) {
+            .verhnee_menu, .center_menu p {
+                font-size: 10px;                
+            }
+            .verhnee_menu .right {
+                float: none;
+            }
+            .center_menu img {
+                width: 80px;
+            }
+            .center_menu .ul_li > li:nth-child(3), 
+            .center_menu .ul_li > li:nth-child(4),
+            .nijnee_meny .left {
+                display: none;
+            }
+            .center_menu li {
+                padding-top: 0;
+            }
+            .nijnee_meny,
+            .ttl {
+                font-size: 12px;
+            }
+            .nijnee_meny .container > div,
+            .right img,
+            .product img {
+                width: 100%;                
+            }
+            
+            .product {
+                margin-right: 0;
+                width: 45%;
+            }     
+            .list_product {
+                justify-content: space-between;
+            }
+            .list_product > .product:nth-child(4n) {
+                margin-right: 0;
+            }
+        }
+        
+
+        /* Конец мобильной адаптации */
